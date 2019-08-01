@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 30 *DO WHILE*</title>
+</head>
+<body>
+    <script>
+        var n1, n2, n;
+        n1 = parseInt(prompt("Digite o 1º número:"));
+        n2 = parseInt(prompt("Digite o 2º número:"));
+
+        if (n1 < n2)
+        {
+            do
+            {
+                if (n1 % 2 != 0)
+                {
+                    alert(n1);
+                }
+                n1++;
+            }
+            while (n1 <= n2);
+        }
+        else if (n1 > n2)
+        {
+            n = n1;
+            do
+            {
+               if (n % 2 != 0)
+                {
+                    alert(n);
+                }
+                n--;
+            }
+            while (n >= n2);
+        }
+    </script>
+    
+</body>
+</html>
